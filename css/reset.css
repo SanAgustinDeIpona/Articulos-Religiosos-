@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.scroll--inactive{
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    height: auto;
+    object-fit: cover;
+}
+
+input{
+    outline: none;
+    border: none;
+}

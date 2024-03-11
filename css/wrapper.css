@@ -1,0 +1,223 @@
+.wrapper{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 60px;
+    right: 8px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 1px 6px 24px 0 rgba(7,94,84,.54);
+    transition: background-color .3s linear;
+    pointer-events: none;
+    opacity: 0;
+
+    animation-name: showArrowUp;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 500px;
+
+    &:hover{
+        background-color: rgb(55, 53, 53);
+    }
+}
+
+.link__arrow-up{
+    color: white;
+}
+
+@keyframes showArrowUp{
+    99%{
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+/*estilos del login*/
+
+.login{
+    background-color: rgb(131, 127, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: opacity 1.5s linear;
+}
+
+.login--inactive{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.login__title{
+    color: rgb(131, 127, 255);
+    font-size: 1.3rem;
+}
+
+.login__container-logo{
+    text-align: center;
+}
+
+.login__logo{
+    width: 15rem;
+}
+
+.logo__container-form{
+    background: white;
+    height: 75%;
+    border-radius: 30px 30px 0px 0px;
+    padding: 2rem;
+    transform: translateY(100%);
+
+    animation-name: showLoginForm;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes showLoginForm{
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.logo__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 3rem;
+    gap: 1.5rem;
+}
+
+.login__label{
+    color: gray;
+    margin-left: 3px;
+}
+
+.login__input{
+    background-color: rgba(220, 220, 220, 0.4);
+    width: 100%;
+    height: 2rem;
+    margin-top: .9rem;
+    padding: 20px 10px;
+    border-radius: 12px;
+}
+
+.login__send{
+    background-color: rgb(242, 213, 51);
+    width: 100%;
+    height: 3rem;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color .3s linear;
+
+    &:hover{
+        background-color: rgb(211, 185, 38);
+    }
+}
+
+/*estilos de la targeta de success*/
+
+.card{
+    background-color: rgba(0, 0, 0, 0.518);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: opacity 1s linear;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card--active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.card__backgroun{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 18rem;
+    width: 18rem;
+    opacity: 1;
+    border-bottom: 16px solid aquamarine;
+    border-radius: 12px;
+    box-shadow: 15px -15px 0px aquamarine;
+}
+
+.card__success{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+
+    &::after{
+        content: "";
+        width: 1rem;
+        height: 2.2rem;
+        rotate: 50deg;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+        margin-top: -9px;
+        border-radius: 4px;
+    }    
+}
+
+.card__container{
+    text-align: center;
+}
+
+.card__title{
+    margin-bottom: .5rem;
+}
+
+.card__text{
+    color: rgb(175, 175, 175);
+    font-size: .8rem;
+}
+
+.card__button{
+    padding: .5rem 4rem;
+    border: 2px solid aquamarine;
+    border-radius: 12px;
+    color: rgb(89, 199, 162);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background .3s linear, color .2s linear;
+    background-color: white;
+
+    &:hover{
+        background-color: aquamarine;
+        color: white;
+    }
+}   

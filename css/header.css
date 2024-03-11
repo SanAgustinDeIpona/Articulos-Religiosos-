@@ -1,0 +1,209 @@
+.menu {
+  --s: 1.9em; /* control the size */
+  --c: black; /* the color */
+  
+  height: var(--s);
+  aspect-ratio: 1;
+  border: none;
+  padding: 0;
+  border-inline: calc(var(--s)/2) solid #f4ff5e00; 
+  box-sizing: content-box;
+  --_g1: linear-gradient(var(--c) 20%,#ffee0000 0 80%,var(--c) 0) 
+         no-repeat content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+         repeat-y content-box border-box;
+  background: 
+    var(--_g2) left  var(--_p,0px) top,
+    var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+    var(--_g2) right var(--_p,0px) top,
+    var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+  background-size: 
+    20% 80%,
+    40% 100%;
+  position: relative;
+  clip-path: inset(0 25%);
+  -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+  cursor: pointer;
+  transition: 
+    background-position .3s var(--_s,.3s), 
+    clip-path 0s var(--_s,.6s);
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  z-index: 5;
+}
+.menu:before,
+.menu:after {
+  content:"";
+  position: absolute;
+  border-radius: var(--s);
+  inset: 40% 0;
+  background: var(--c);
+  transition: transform .3s calc(.3s - var(--_s,.3s));
+}
+
+.menu:checked {
+  clip-path: inset(0);
+  --_p: calc(-1*var(--s));
+  --_s: 0s;
+}
+.menu:checked:before {
+  transform: rotate(45deg);
+}
+.menu:checked:after {
+  transform: rotate(-45deg);
+}
+.menu:focus-visible {
+  clip-path: none;
+  -webkit-mask: none;
+  border: none;
+  outline: 2px solid var(--c);
+  outline-offset: 5px;
+}
+
+  .figure-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.7rem 1rem 0 0;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  
+  .header{
+    background-color: var(--color-secondary);
+    color: aliceblue;
+    width: 100%;
+    position: sticky;
+    padding-bottom: 1.4em;
+    top: 0;
+    z-index: 9;
+
+    animation-name: headerOpacity;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 900px;
+  }
+
+  @keyframes headerOpacity{
+    100%{
+        opacity: .9;
+    }
+}
+
+  .header__logo-container{
+    background-color: var(--color-secondary);
+    height: 4.5rem;
+    width: 45%;
+  }
+
+  .header__logo{
+    width: 7rem;
+  }
+
+  /*estilos del menu*/
+  
+  .header__container-menu{
+    background-color: rgb(131, 127, 255);
+    padding: 0 4px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: transform 1s;
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  .header__menu--active{
+    transform: translateX(0);
+  }
+
+  .header__logo-container-menu{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 40%;
+    margin: 1em 0 1em 0;
+    overflow: hidden;
+  }
+  
+  .header__menu{
+    overflow-y: auto;
+    background-color: #000;
+    height: 36rem;
+  }
+
+  .header__logo-menu{
+    width: 10rem;
+  }
+
+  .header__category{
+    background: #0b933d;
+    margin-bottom: 1em;
+  }
+
+  .header__span{
+    background: #08b748;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8px;
+    cursor: pointer;
+    transition: background .6s linear;
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .header__category-all{
+    background: #08b748;
+    padding: 1rem 8px;
+    cursor: pointer;  
+  }
+  
+  .header__category--active{
+    background: #93880b;
+  }
+
+  .bi-arrow-bar-down{
+    font-size: 1.5em;
+    transition: transform .3s linear;
+  }
+
+  .bi-arrow-active{
+    transform: rotate(180deg);
+  }
+
+  .header__sub-menu{
+    height: 0px;
+    overflow: hidden;
+    transition: height .3s linear;
+  }
+
+  .header__sub-menu--active{
+    height: 130px;
+  }
+  
+  .header__sub-category{
+    padding: 1em 1em;
+    transition: background-color .4s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      background-color: royalblue;
+    }
+  }

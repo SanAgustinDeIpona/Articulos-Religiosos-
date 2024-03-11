@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "Rosario de madera",
+        "image": "assets/01.jpg",
+        "stock": 4,
+        "category": {
+            "id": "1",
+            "name": "Rosarios",
+            "description": "Rosarios de madera"
+        },
+        "price": 100
+    },
+    {
+        "id": "2",
+        "title": "Rosario Divina misericordia",
+        "image": "assets/01.jpg",
+        "stock": 4,
+        "category": {
+            "id": "1",
+            "name": "Rosarios",
+            "description": "Rosarios de metal"
+        },
+        "price": 200
+    },
+    {
+        "id": "3",
+        "title": "Rosario de plastico rojo",
+        "image": "assets/01.jpg",
+        "stock": 4,
+        "category": {
+            "id": "1",
+            "name": "Rosarios",
+            "description": "Rosarios de plastico"
+        },
+        "price": 1000
+    },
+    {
+        "id": "4",
+        "title": "Las glorias de Maria",
+        "image": "assets/01.jpg",
+        "stock": 1,
+        "category": {
+            "id": "2",
+            "name": "Libros",
+            "description": "San Alfonso Maria de Ligorio"
+        },
+        "price": 1000
+    }
+]
