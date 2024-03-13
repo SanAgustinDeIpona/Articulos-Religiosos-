@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Rosario de madera",
-        "image": "assets/01.jpg",
+        "image": "assets/01.png",
         "stock": 4,
         "category": {
             "id": "1",
@@ -14,7 +14,7 @@
     {
         "id": "2",
         "title": "Rosario Divina misericordia",
-        "image": "assets/01.jpg",
+        "image": "assets/01.png",
         "stock": 4,
         "category": {
             "id": "1",
@@ -26,7 +26,7 @@
     {
         "id": "3",
         "title": "Rosario de plastico rojo",
-        "image": "assets/01.jpg",
+        "image": "assets/01.png",
         "stock": 4,
         "category": {
             "id": "1",
@@ -38,7 +38,7 @@
     {
         "id": "4",
         "title": "Las glorias de Maria",
-        "image": "assets/01.jpg",
+        "image": "assets/01.png",
         "stock": 1,
         "category": {
             "id": "2",

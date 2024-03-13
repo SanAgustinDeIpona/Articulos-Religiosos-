@@ -1,6 +1,6 @@
 .menu {
   --s: 1.9em; /* control the size */
-  --c: black; /* the color */
+  --c: var(--color-background-white); /* the color */
   
   height: var(--s);
   aspect-ratio: 1;
@@ -71,10 +71,11 @@
     margin: 1.7rem 1rem 0 0;
     font-size: 1.8em;
     cursor: pointer;
+    width: 9rem;
   }
   
   .header{
-    background-color: var(--color-secondary);
+    background-color: var(--color-clare);
     color: aliceblue;
     width: 100%;
     position: sticky;
@@ -96,7 +97,6 @@
 }
 
   .header__logo-container{
-    background-color: var(--color-secondary);
     height: 4.5rem;
     width: 45%;
   }
@@ -108,8 +108,8 @@
   /*estilos del menu*/
   
   .header__container-menu{
-    background-color: rgb(131, 127, 255);
-    padding: 0 4px;
+    background-color: var(--rgba-opacity);
+    padding: 0 4px; 
     position: fixed;
     right: 0;
     left: 0;
@@ -125,7 +125,6 @@
   }
 
   .header__logo-container-menu{
-    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +136,6 @@
   
   .header__menu{
     overflow-y: auto;
-    background-color: #000;
     height: 36rem;
   }
 
@@ -146,19 +144,19 @@
   }
 
   .header__category{
-    background: #0b933d;
+    background: var(--color-primary);
     margin-bottom: 1em;
   }
 
   .header__span{
-    background: #08b748;
+    background: var(--color-background-white);
     display: flex;
     justify-content: space-between;
     padding: 1rem 8px;
     cursor: pointer;
     transition: background .6s linear;
     position: relative;
-
+    color: var(--rgb-color-primary);
     &::after{
       content: "";
       position: absolute;
@@ -170,9 +168,10 @@
   }
 
   .header__category-all{
-    background: #08b748;
+    background: var( --color-letter-primary);
     padding: 1rem 8px;
-    cursor: pointer;  
+    cursor: pointer;
+    color: var(--rgb-color-primary);  
   }
   
   .header__category--active{
@@ -204,6 +203,6 @@
     cursor: pointer;
 
     &:hover{
-      background-color: royalblue;
+      background-color: var(--color-clare);
     }
   }

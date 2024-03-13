@@ -1,12 +1,11 @@
 .wrapper{
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .link{
-    background-color: black;
+    background-color: var(--color-clare);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +26,7 @@
     animation-range: 0 500px;
 
     &:hover{
-        background-color: rgb(55, 53, 53);
+        background-color: var(--color-primary);
     }
 }
 
@@ -50,7 +49,7 @@
 /*estilos del login*/
 
 .login{
-    background-color: rgb(131, 127, 255);
+    background-color: var(--color-clare);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +68,7 @@
 }
 
 .login__title{
-    color: rgb(131, 127, 255);
+    color: var(--rgb-color-primary);
     font-size: 1.3rem;
 }
 
@@ -123,7 +122,8 @@
 }
 
 .login__send{
-    background-color: rgb(242, 213, 51);
+    background-color: var(--color-clare);
+    color: var(--color-letter-primary);
     width: 100%;
     height: 3rem;
     border-radius: 12px;
@@ -131,7 +131,7 @@
     transition: background-color .3s linear;
 
     &:hover{
-        background-color: rgb(211, 185, 38);
+        background-color: var(--color-primary-web);
     }
 }
 
@@ -142,7 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;    
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -151,6 +151,16 @@
     transition: opacity 1s linear;
     opacity: 0;
     pointer-events: none;
+}
+
+.card__error-container{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card__error-container--active{
+    opacity: 1;
+    pointer-events: all;
 }
 
 .card--active{
@@ -162,7 +172,7 @@
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     height: 18rem;
     width: 18rem;
@@ -172,15 +182,23 @@
     box-shadow: 15px -15px 0px aquamarine;
 }
 
-.card__success{
+.card__backgroun-error{
+    border-bottom: 16px solid tomato;
+    box-shadow: 15px -15px 0px tomato;
+}
+
+.card__result{
     background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
     width: 6rem;
-    border-radius: 50%;
+    border-radius: 50%;  
+    display: none;
+}
 
+.card__success{
     &::after{
         content: "";
         width: 1rem;
@@ -190,7 +208,18 @@
         border-bottom: 4px solid white;
         margin-top: -9px;
         border-radius: 4px;
-    }    
+    }  
+}
+
+.card__error{
+    background-color: tomato;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.card__result--active{
+    display: flex;
 }
 
 .card__container{
@@ -198,12 +227,20 @@
 }
 
 .card__title{
+    font-size: 1.3rem;
     margin-bottom: .5rem;
+    color: aquamarine;
+}
+
+.card__title-error{
+    color: tomato;
 }
 
 .card__text{
-    color: rgb(175, 175, 175);
-    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(155, 150, 150);
+    font-size: 1rem;
+    padding: 4px;
 }
 
 .card__button{
@@ -221,3 +258,13 @@
         color: white;
     }
 }   
+
+.card__button-error{
+    border-color: tomato;
+    color: tomato;
+
+    &:hover{
+        background-color: tomato;
+        color: white;
+    }
+}

@@ -20,7 +20,8 @@
       </div>
 
       <nav class="figure-menu">
-        <i class="bi bi-bag-fill shopping-car"></i>
+        <i class="bi bi-cart-fill shopping-car"></i>
+        <i class="bi bi-bag-heart bagged-products"></i>
         <input id="figure-menu" type="checkbox" role="button" aria-label="Display the menu" class="menu">
       </nav>
 
@@ -73,28 +74,16 @@
             
           </div>
 
+          <div class="bagged-container">
+            <!-- Esto se va a completar con el JS -->
+
+          </div>
+
           <div class="sshopping-car">
 
             <div class="shopping-car__products-container">
                   <!-- Esto se va a completar con el JS -->
-            <div class="shopping-car__product">
-              <img class="shopping-car__product-img" src="./assets/01.jpg" alt="rosario">
-            
-              <div class="shopping-car__product__description">
-                <small class="shopping-car__product__title">Título</small>
-                <h2 class="shopping-car__product__name">Rosario doloroso</h2>
-              </div>
-              <div class="shopping-car__product__description">
-                <small class="shopping-car__product__title">Cantidad</small>
-                <p class="shopping-car__product__amount">7</p>
-              </div>
-              <div class="shopping-car__product__description">
-                <small class="shopping-car__product__title">Precio</small>
-                <p class="shopping-car__product__price">$80</p>
-              </div>
-              <button class="shopping-car__delete" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
-              </div>
-          
+                
             </div>
 
             <div class="shopping-car__actions">
@@ -106,7 +95,11 @@
                   <button class="shopping-car__buy">Comprar ahora</button>
               </div>
             </div>
-
+            <span class="shopping-car__span shopping-car__span--active">Tu carrito de compras se encuentra vacio <i class="bi bi-emoji-grimace-fill shopping-car__emoji"></i></span>
+          
+            <div class="loader">
+              <img class="loader__img" src="./assets/circles.svg" alt="">
+            </div>
           </div>    
       </main>
 
@@ -136,20 +129,35 @@
         </div>
       </div>
 
-      <div class="card ">
+      <div class="card card--success">
         <div class="card__backgroun">
-          <div class="card__success"></div>
+          <div class="card__success card__result card__result--active"></div>
+          <div class="card__error card__result">X</div>
 
           <section class="card__container">
             <h4 class="card__title">¡Exito!</h4>
-            <p class="card__text">Registro guardado correctamente</p>
+            <p class="card__text card__text--success">Registro guardado correctamente</p>
           </section>
 
           <button class="card__button" type="button">Ok</button>
         </div>
       </div>
-  </div>
+      
+      <div class="card card__error-container">
+        <div class="card__backgroun card__backgroun-error">
+          <div class="card__error card__result">X</div>
 
+          <section class="card__container">
+            <h4 class="card__title card__title-error">¡Error!</h4>
+            <p class="card__text">¡Algo ha salido mal, porfavor intentelo mas marde, si el problema persiste, contactese al N° 88496345¡</p>
+          </section>
+
+          <button class="card__button card__button-error" type="button">Ok</button>
+        </div>
+      </div>
+
+      </div>
+  </div>
   <!--``-->
 </body>
 </html>

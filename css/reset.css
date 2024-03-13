@@ -10,6 +10,7 @@ html{
 }
 
 body{
+    background-color: var(--color-clare);
     font-family: "Montserrat", sans-serif;
 }
 

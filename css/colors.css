@@ -1,6 +1,13 @@
 :root{
-    --color-primary: rgb(119, 194, 120);
-    --color-secondary:rgb(112, 84, 84);
-    --rgb-color-primary: rgb(158, 55, 158);
+    --color-background-white: white;
+    --color-background-wheat: wheat;
+    --color-primary: #964B00;
+    --color-secondary:#F0824D;
+    --color-clare: #986E43;
+    --rgba-opacity: #7c5b3a;
+    --color-primary-web: #ddbb74;
+    --color-secondary-web: #DDBB74;
+    --rgb-color-primary: rgba(0, 0, 0, 0.603);
     --rgb-color-secondary: rgb(255, 119, 255);
+    --color-letter-primary: white;
 }
