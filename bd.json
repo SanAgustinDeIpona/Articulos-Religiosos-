@@ -3,7 +3,7 @@
         "id": "1",
         "title": "Mayo mes de la Virgen",
         "image": "assets/products/mayo-mes-de-la-virgen.png",
-        "stock": 1,
+        "stock": 3,
         "category": {
             "id": "1",
             "name": "Libros",
@@ -430,5 +430,17 @@
             "description": "Gabriele Amorth"
         },
         "price": 530
+    },
+    {
+        "id": "37",
+        "title": "9 días con Santa Faustina",
+        "image": "assets/products/libro-9-dias-con-sor-faustina.png",
+        "stock": 1,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "Helene Dumont"
+        },
+        "price": 250
     }
 ]

@@ -27,7 +27,7 @@ export function main(){
         </div>
         <div class="main__detail-product">
           <h3 class="main__title__producto">${product.title}</h3>
-          <p class="main__price__product">C$${product.price} <span class="main_product-stock">Stock: ${product.stock}</span></p>
+          <p class="main__price__product">C$${product.price} <span class="main_product-stock">Existencias: ${product.stock}</span></p>
 
           <button class="producto-add ${target?"producto-add--ok":""}" id="${product.id}">${target?"Articulo agregado":"Agregar"} <i class="bi bi-cart-plus-fill"></i></button>
         </div>

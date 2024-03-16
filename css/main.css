@@ -203,6 +203,7 @@
     margin-top: 1rem;
     border-radius: 20px;
     border: 1px solid var(--color-clare);
+    overflow: hidden;
 }
 
 .shopping-car__title{
@@ -226,6 +227,8 @@
     width: 100%;
     padding: .8rem;
     transition: background-color .3s linear, color .1s linear;
+    font-weight: bold;
+    border-radius: 0rem 0rem 1rem 1rem;
 
     &:hover{
         background-color: rgb(45, 210, 30);

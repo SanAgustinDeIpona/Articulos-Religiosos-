@@ -10,9 +10,9 @@ export async function ajax (cdSuccess){
         //lo puse asi porque primero se ejecuta sorprendentemente esto antes que login
         if(localStorage.getItem("productsFioreDiCarmelo") && localStorage.getItem("login")){
         
-            if(localStorage.getItem("statusFiore") === "false")//si hay una actualizacion del producto
+            if(localStorage.getItem("statusFiore") === "true")//si hay una actualizacion del producto
             {
-                localStorage.setItem("statusFiore", true);
+                localStorage.setItem("statusFiore", false);
 
                 localStorage.setItem("productsFioreDiCarmelo", JSON.stringify(products))
 
