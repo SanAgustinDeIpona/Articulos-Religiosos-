@@ -30,21 +30,23 @@
 }
 
 .main__img-product-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 9%;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
+    padding-bottom: .1rem;
 }
 
 .main__img-product{
-    width: 100%;
+    width: 90%;
 }
 
 .main__detail-product{
     background: var(--color-background-wheat);
     color: var(--rgb-color-primary);
     border-radius: 15px;
-    margin-top: -1rem;
     padding: .6rem;
     padding-top: 1rem;
 }

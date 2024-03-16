@@ -1,7 +1,8 @@
 export function header(){
   const $ = ($element)=> document.querySelector($element);
   const $containerMenu = $(".header__container-menu"),
-        $figureMenu = $(".menu");
+        $figureMenu = $(".menu"),
+        $html = $("html");
   
     let $subMenu = null,  
     $icon;
@@ -9,7 +10,7 @@ export function header(){
   document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("menu") || e.target.classList.contains("header__sub-category") || e.target.classList.contains("header__category-all")){
       $containerMenu.classList.toggle("header__menu--active");
-      
+      $html.classList.toggle("scroll--inactive");
       if ($figureMenu.checked) $figureMenu.checked = false;
       else $figureMenu.checked = true;
     }

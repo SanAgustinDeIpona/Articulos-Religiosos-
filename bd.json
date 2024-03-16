@@ -1,50 +1,434 @@
 [
     {
         "id": "1",
-        "title": "Rosario de madera",
-        "image": "assets/01.png",
-        "stock": 4,
+        "title": "Mayo mes de la Virgen",
+        "image": "assets/products/mayo-mes-de-la-virgen.png",
+        "stock": 1,
         "category": {
             "id": "1",
-            "name": "Rosarios",
-            "description": "Rosarios de madera"
+            "name": "Libros",
+            "description": "San Alfonso Maria de Ligorio"
         },
-        "price": 100
+        "price": 90
+    },
+    {
+        "id": "6",
+        "title": "Estampa de San Miguel Arcángel",
+        "image": "assets/products/estampita-pequeña-arcanjel-miguel-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
     },
     {
         "id": "2",
         "title": "Rosario Divina misericordia",
-        "image": "assets/01.png",
-        "stock": 4,
+        "image": "assets/products/rosario-divina-misericordia-removebg-preview.png", 
+        "stock": 2,
         "category": {
-            "id": "1",
-            "name": "Rosarios",
-            "description": "Rosarios de metal"
-        },
-        "price": 200
-    },
-    {
-        "id": "3",
-        "title": "Rosario de plastico rojo",
-        "image": "assets/01.png",
-        "stock": 4,
-        "category": {
-            "id": "1",
+            "id": "3",
             "name": "Rosarios",
             "description": "Rosarios de plastico"
         },
-        "price": 1000
+        "price": 70
+    },
+    {
+        "id": "3",
+        "title": "Rosario de Madera",
+        "image": "assets/products/rosario-de-madera-removebg-preview.png",
+        "stock": 6,
+        "category": {
+            "id": "3",
+            "name": "Rosarios",
+            "description": "Rosarios de madera"
+        },
+        "price": 70
     },
     {
         "id": "4",
-        "title": "Las glorias de Maria",
-        "image": "assets/01.png",
+        "title": "Las glorias de María",
+        "image": "assets/products/las_glorias_de_maria-removebg-preview.png",
         "stock": 1,
         "category": {
             "id": "2",
             "name": "Libros",
             "description": "San Alfonso Maria de Ligorio"
         },
-        "price": 1000
+        "price": 440
+    },
+    {
+        "id": "5",
+        "title": "Estampa de San Benito",
+        "image": "assets/products/estampita-pequeña-san-benito-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "7",
+        "title": "Estampa de Jesús Nazareno",
+        "image": "assets/products/estampita-pequeña-nasareno-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "8",
+        "title": "Estampa de Nuestra Señora de los Dolores",
+        "image": "assets/products/estampita-pequeña-dolorosa-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "9",
+        "title": "Estampa de la Anunciación",
+        "image": "assets/products/estampita-pequeña-anunciacion-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "19",
+        "title": "Estampa de Santa Faustina",
+        "image": "assets/products/estampita-pequeña-santa-faustina-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "10",
+        "title": "Estampa de la Asunción",
+        "image": "assets/products/estampita-pequeña-asuscion-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "11",
+        "title": "Collar colgante de San Pedro",
+        "image": "assets/products/collar-san-pedro.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "12",
+        "title": "Collar colgante de San Expedito",
+        "image": "assets/products/san-expedito.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "13",
+        "title": "Collar colgante del Sagrado Corazón de Jesús",
+        "image": "assets/products/collar-sagrado-corazon-de-jesus.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "14",
+        "title": "ABC para Niños",
+        "image": "assets/products/ABC-removebg-preview.png",
+        "stock": 12,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "Anonimo"
+        },
+        "price": 50
+    },
+    {
+        "id": "15",
+        "title": "Novena a la Virgen del Carmen",
+        "image": "assets/products/novena-virgen-del-carmen-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "Virgen del Carmen"
+        },
+        "price": 30
+    },
+    {
+        "id": "16",
+        "title": "Novena a la Medalla Milagrosa",
+        "image": "assets/products/novena-medalla-milagrosa-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "Medalla Milagrosa"
+        },
+        "price": 30
+    },
+    {
+        "id": "17",
+        "title": "Novena a San Benito",
+        "image": "assets/products/novena-san-binito-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "San Benito"
+        },
+        "price": 30
+    },
+    {
+        "id": "20",
+        "title": "El Secreto Admirable del Santísimo Rosario",
+        "image": "assets/products/secreto_del_santo_rosario-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "San Alfonso Maria de Ligorio"
+        },
+        "price": 160
+    },
+    {
+        "id": "21",
+        "title": "Pulsera de san Benito",
+        "image": "assets/products/pulcera-san-benito-roja-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "6",
+            "name": "Pulcera",
+            "description": "San benito"
+        },
+        "price": 35
+    },
+    {
+        "id": "22",
+        "title": "Pulsera de san Benito",
+        "image": "assets/products/pulcera-san-benito-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "6",
+            "name": "Pulcera",
+            "description": "San benito"
+        },
+        "price": 35
+    },
+    {
+        "id": "23",
+        "title": "Collar colgante del Santo Padre Pio",
+        "image": "assets/products/collar-padre-pio.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "24",
+        "title": "Collar colgante de San Jose",
+        "image": "assets/products/collar-san-jose.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "25",
+        "title": "Collar colgante de Jesús Resucitado",
+        "image": "assets/products/collar-cristo-resucitado.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "26",
+        "title": "Novena a la Divina Misericordia",
+        "image": "assets/products/novena-divina-misericordia-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "San Jesus"
+        },
+        "price": 30
+    },
+    {
+        "id": "27",
+        "title": "Novena a Santa Teresa de Jesús",
+        "image": "assets/products/novena-santa-teresa-de-jesus-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "Santa Teresa de Jesus"
+        },
+        "price": 30
+    },
+    {
+        "id": "28",
+        "title": "Novena a la Virgen de Guadalupe",
+        "image": "assets/products/novena-virgen-de-guadalupe-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "Virgen de Guadalupe"
+        },
+        "price": 30
+    },
+    {
+        "id": "29",
+        "title": "Retablo de la Virgen del Socorro",
+        "image": "assets/products/virgen_del_socorro-removebg-preview.png",
+        "stock": 1,
+        "category": {
+            "id": "7",
+            "name": "Retablos",
+            "description": "Virgen del Socorro"
+        },
+        "price": 80
+    },
+    {
+        "id": "30",
+        "title": "Estampa de Santa Clara De Asís",
+        "image": "assets/products/estampita-pequeña-santa-clara-de-asis-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "31",
+        "title": "Estampa del Sagrado Corazón de Jesús",
+        "image": "assets/products/estampita-pequeña-sagrado-corazon-de-jesus-removebg-preview.png",
+        "stock": 5,
+        "category": {
+            "id": "2",
+            "name": "Estampas pequeñas",
+            "description": "Estampas"
+        },
+        "price": 2
+    },
+    {
+        "id": "32",
+        "title": "Collar colgante de Jesús Cordero de Dios",
+        "image": "assets/products/collar-cordero-de-dios.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "33",
+        "title": "Collar colgante de Jesús Cordero de Dios",
+        "image": "assets/products/collar-buen-pastor.png",
+        "stock": 5,
+        "category": {
+            "id": "4",
+            "name": "Cadena de cordon",
+            "description": "Cadenas"
+        },
+        "price": 55
+    },
+    {
+        "id": "34",
+        "title": "El Tesoro Escondido de la SANTA MISA",
+        "image": "assets/products/secreto-santa-misa-removebg.png",
+        "stock": 3,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "San Leonardo de Porto Mauricio"
+        },
+        "price": 90
+    },
+    {
+        "id": "35",
+        "title": "Vida de Santo Domingo Savio",
+        "image": "assets/products/libro-santo-domingo-savio-removebg-preview.png",
+        "stock": 3,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "Santo Domingo Savio"
+        },
+        "price": 60 
+    },
+    {
+        "id": "36",
+        "title": "Novena a San Francisco de Asís",
+        "image": "assets/products/novena-san-fransico-de-asis-removebg-preview.png",
+        "stock": 2,
+        "category": {
+            "id": "3",
+            "name": "Novenas",
+            "description": "San Francisco de Asis"
+        },
+        "price": 30
+    },
+    {
+        "id": "18",
+        "title": "Gabriele Amorth",
+        "image": "assets/products/libro-gabriele-amorth.png",
+        "stock": 1,
+        "category": {
+            "id": "1",
+            "name": "Libros",
+            "description": "Gabriele Amorth"
+        },
+        "price": 530
     }
 ]

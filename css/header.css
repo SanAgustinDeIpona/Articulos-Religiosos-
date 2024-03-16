@@ -79,6 +79,7 @@
     color: aliceblue;
     width: 100%;
     position: sticky;
+    padding: 0 0 0 1rem;
     padding-bottom: 1.4em;
     top: 0;
     z-index: 9;
@@ -97,12 +98,14 @@
 }
 
   .header__logo-container{
-    height: 4.5rem;
-    width: 45%;
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   .header__logo{
-    width: 7rem;
+    width: 100%;
   }
 
   /*estilos del menu*/
@@ -128,8 +131,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6rem;
-    width: 40%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
     margin: 1em 0 1em 0;
     overflow: hidden;
   }
@@ -140,7 +144,7 @@
   }
 
   .header__logo-menu{
-    width: 10rem;
+    width: 100%;
   }
 
   .header__category{
@@ -194,7 +198,7 @@
   }
 
   .header__sub-menu--active{
-    height: 130px;
+    height: auto;
   }
   
   .header__sub-category{

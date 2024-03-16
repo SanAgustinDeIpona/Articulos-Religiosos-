@@ -1,7 +1,6 @@
 import { ajax } from "./ajax.js";
 
 export function login (){
-
     const $login = document.querySelector('.login'),
         $html = document.querySelector('html'),
         $card = document.querySelector(".card"),
@@ -24,8 +23,11 @@ export function login (){
                     name: e.target.name.value,
                     telephone: e.target.telephone.value
                 }));
-
+                
                 localStorage.setItem("shoppingCart", JSON.stringify([]));
+                localStorage.setItem("baggedProducts", JSON.stringify([]));
+                localStorage.setItem("total", JSON.stringify([]));
+                localStorage.setItem("statusFiore", false);
 
                 $card.classList.add("card--active");
                 $login.classList.add("login--inactive");
@@ -34,7 +36,6 @@ export function login (){
                     if(e.target.classList.contains("card__button")){
                         $card.classList.remove("card--active");
                         $html.classList.remove("scroll--inactive");
-                        location.reload();
                     }
                 });
             }
